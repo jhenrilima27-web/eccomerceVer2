@@ -57,7 +57,6 @@ try {
 
 	$stmt = $pdo->prepare($sql);
 
-    $stmt->bindValue(":id", $dados["id"]);
     $stmt->bindValue(":nome", $dados["nome"]);
     $stmt->bindValue(":preco", $dados["preco"]);
     $stmt->bindValue(":imagem", $dados["imagem"]);

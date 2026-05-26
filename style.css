@@ -172,3 +172,53 @@ button {
         button:hover{
             background:#0056b3;
         }
+
+/*----------Pagina Login----------*/
+.body-login {
+    margin: 0;  /*margem para cima e para baixo*/
+    height: 100vh;  /*Altura da tela 100*/
+    display: flex;  /*Sistema de alinhamento */
+    justify-content: center;  /*centralizar na horizontal*/
+    align-items: center;  /*centralizar na vertical*/
+    background-color: rgb(130, 199, 245);  /*Cor de funfo da página*/
+    font-family: Arial, sans-serif;  /*Escolha da fonte */
+    }
+
+.login-container {
+    background-color: blue;  /*Cor de fundo*/
+    padding: 30px;  /*espaço interno*/
+    border-radius: 15px;  /*Bordas arredondadas*/
+    margin: 3%; /*Margem */
+    width: 100%;  /*Ocupa o máximo de Largura possivel*/
+    max-width: 600px; /*Limite de tamanho*/
+    }
+
+input {
+    width: 100%;  /*Ocupa toda a largura da caixa*/
+    padding: 10px;  /*Espaço interno*/
+    border-radius: 20px;  /*Arredondar a borda*/
+    border: none;  /*Remove borda padrão*/
+    margin-top: 5px;  /*Espaço acima do input*/
+}
+
+button {
+    padding: 10px 20px;  /*Altura e largura interna*/
+    border-radius: 20px;  /*Arredondado*/
+    border: none;  /*remove a borda*/
+    background-color:aqua;  /*Cor do botão*/
+    cursor: pointer;  /*Muda o mouse para mão*/
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.botoes {
+    display: flex;  /*Coloca os botões lado a lado*/
+    justify-content: flex-end;  /*Tudo a direita*/
+    gap: 10px;  /*Espaço entre os botões*/
+    margin-top: 20px;  /*espaço a cima deles*/
+    transition: 0.3s;
+}
