@@ -207,12 +207,12 @@ footer-carrinho {
     display: flex;  /*Sistema de alinhamento */
     justify-content: center;  /*centralizar na horizontal*/
     align-items: center;  /*centralizar na vertical*/
-    background-color: rgb(130, 199, 245);  /*Cor de funfo da página*/
+    background-color:rgb(251, 251, 251) ;  /*Cor de funfo da página*/
     font-family: Arial, sans-serif;  /*Escolha da fonte */
     }
 
 .login-container {
-    background-color: blue;  /*Cor de fundo*/
+    background-color: rgb(135, 181, 247);  /*Cor de fundo*/
     padding: 30px;  /*espaço interno*/
     border-radius: 15px;  /*Bordas arredondadas*/
     margin: 3%; /*Margem */
@@ -232,7 +232,7 @@ button {
     padding: 10px 20px;  /*Altura e largura interna*/
     border-radius: 20px;  /*Arredondado*/
     border: none;  /*remove a borda*/
-    background-color:aqua;  /*Cor do botão*/
+    background-color:rgb(65, 110, 155);  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
     transition: 0.3s;
 }
