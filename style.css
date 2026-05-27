@@ -1,4 +1,4 @@
-/*Pagina principal, Pagina Cadastro produtos, Pagina Login*/
+/*Pagina principal, Pagina Cadastro produtos, Pagina Cadastro cliente*/
 /*---------------Pagina_principal---------------*/
 * {
     margin: 0;
@@ -108,83 +108,87 @@ body {
     }
 }
 
-/*-------------Pagina_cadastro--------------*/
-*{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
+/*-------------Pagina_cadastro_produtos--------------*/
 
-        .container{
-            max-width:600px;
-            margin:auto;
-            background:rgb(107, 153, 218);
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
+.container{
+    max-width:600px;
+    margin:auto;
+    background:rgb(107, 153, 218);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 
-        h1{
-            text-align:center;
-            margin-bottom:25px;
-        }
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
 
-        .grupo{
-            margin-bottom:20px;
-        }
+.grupo{
+    margin-bottom:20px;
+}
 
-        label{
-            display:block;
-            margin-bottom:8px;
-            font-weight:bold;
-        }
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
 
-        input{
-            width:100%;
-            padding:12px;
-            border:1px solid #ccc;
-            border-radius:5px;
-            font-size:16px;
-        }
+input{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
 
-        input:focus{
-            outline:none;
-            border-color:#007bff;
-        }
+input:focus{
+    outline:none;
+    border-color:#007bff;
+}
 
-        button{
-            padding:15px;
-            background:#007bff;
-            border:none;
-            border-radius:5px;
-            font-size:18px;
-            cursor:pointer;
-        }
+button{
+    padding:15px;
+    background:#007bff;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+}
 
-        button:hover{
-            background:#0056b3;
-        }
+button:hover{
+    background:#0056b3;
+}
 
-/*----------Pagina Login----------*/
+/*-----------Logo----------*/
 
-.body-login {
-    margin: 0;  /*margem para cima e para baixo*/
+.logo{
+    width: 80px;/*tamanho da imagem da logo*/
+}
+
+/*-------------------Pagina Cadastro------------------*/
+.container{
+        display: flex;
+        grid-template-areas: 
+        "header header header"
+        "main main main "
+        "footer footer footer"
+}
+
+.header-cadastro{
+        grid-area: header;
+        background: rgb(130, 199, 245); /*cor de fundo*/
+        justify-content: space-between; /*deixa tudo a esquerda*/
+}
+
+.body-cadastro{
+    margin: 0 auto;  /*margem para cima e para baixo*/
     height: 100vh;  /*Altura da tela 100*/
     display: flex;  /*Sistema de alinhamento */
     justify-content: center;  /*centralizar na horizontal*/
-    align-items: center;  /*centralizar na vertical*/
-    background-color: rgb(130, 199, 245);  /*Cor de funfo da página*/
-    font-family: Arial, sans-serif;  /*Escolha da fonte */
-    }
-
-.login-container {
-    background-color: blue;  /*Cor de fundo*/
-    padding: 30px;  /*espaço interno*/
-    border-radius: 15px;  /*Bordas arredondadas*/
-    margin: 3%; /*Margem */
-    width: 100%;  /*Ocupa o máximo de Largura possivel*/
-    max-width: 600px; /*Limite de tamanho*/
-    }
+    background-color: rgb(107, 153, 218);  /*Cor de fundo da página*/
+    font-family: Arial, sans-serif; /*fonte*/
+}
 
 input {
     width: 100%;  /*Ocupa toda a largura da caixa*/
@@ -194,31 +198,11 @@ input {
     margin-top: 5px;  /*Espaço acima do input*/
 }
 
-button {
+button{
     padding: 10px 20px;  /*Altura e largura interna*/
     border-radius: 20px;  /*Arredondado*/
     border: none;  /*remove a borda*/
     background-color:aqua;  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: black;
-    color: white;
-}
-
-.botoes {
-    display: flex;  /*Coloca os botões lado a lado*/
-    justify-content: flex-end;  /*Tudo a direita*/
-    gap: 10px;  /*Espaço entre os botões*/
-    margin-top: 20px;  /*espaço a cima deles*/
-    transition: 0.3s;
-}
-
-
-/*-----------Logo----------*/
-
-.logo{
-    width: 80px;/*tamanho da imagem da logo*/
+    justify-content: flex-end; /*Deixa tudo a direita*/
 }
