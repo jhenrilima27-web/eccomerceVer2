@@ -25,7 +25,8 @@ body {
 
 .header-final{
     grid-area: header-final;
-    background-color: rgb(46, 129, 245);
+    background-color: rgb(99, 155, 218);
+
 }
 
 .logo-final{
@@ -39,11 +40,12 @@ body {
 .titulo-final{
     justify-self: center; /*mantém o título no centro*/
     margin: 30px; 
+    color: white;
 }
 
 .produto-final{
     grid-area: produto-final;
-    background-color: rgb(130, 199, 245);
+    background-color: rgb(251, 251, 251);
 }
 
 .produto-final img{
@@ -55,18 +57,18 @@ body {
 
 .informação-final{
     grid-area: informação-final;
-    background-color:rgb(130, 199, 245);
+    background-color:rgb(251, 251, 251);
     margin: 20px;
     font-size: 20px;
 }
 
 .body-final{
-    background-color: rgb(130, 199, 245);
+    background-color:rgb(251, 251, 251);
 }
 
 .status{
     grid-area: status;
-    background-color: rgb(130, 199, 245);
+    background-color: rgb(251, 251, 251);
     gap: 10px;
     margin: 20px;
 }
@@ -91,7 +93,7 @@ body {
 
 .footer-final{
     grid-area: footer-final;
-    background-color: rgb(46, 129, 245);
+    background-color: rgb(99, 155, 218);
     border-radius: 10px;
     text-align: center;
 }
@@ -232,7 +234,7 @@ button {
     padding: 10px 20px;  /*Altura e largura interna*/
     border-radius: 20px;  /*Arredondado*/
     border: none;  /*remove a borda*/
-    background-color:rgb(65, 110, 155);  /*Cor do botão*/
+    background-color:rgb(50, 94, 139);  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
     transition: 0.3s;
 }
