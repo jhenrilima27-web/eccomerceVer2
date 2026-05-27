@@ -8,67 +8,74 @@
 </head>
 
 <header class="header-cadastro">
-    <img src="img/logo.png" class="logo">
 </header>
 
 <body class="body-cadastro">
 
-    <form method="post" action="salvar.php">
+    <form class="formulario" method="post" action="salvar.php">
 
         
         <h1>Cadastro</h1><br>
 
-        <div>
-            <label for="Nome">Nome: </label><br>
-            <input type="text" id="nome" name="Nome"><br><br>
+        <div class="linha">
+            <div class="campo">
+                <label for="Nome">Nome: </label><br>
+                <input type="text" id="nome" name="Nome"><br><br>
+            </div>
+
+            <div class="campo">
+                <label for="CPF">CPF: </label><br>
+                <input type="number" id="CPF" name="CPF"><br><br>
+            </div>
         </div>
 
-        <div>
-            <label for="CPF">CPF: </label><br>
-            <input type="number" id="CPF" name="CPF"><br><br>
-        </div>
+        <div class="linha">
+            <div>
+                <label for="Email">Email: </label><br>
+                <input type="email" id="Email" name="Email"><br><br>
+            </div>
 
-        <div>
-            <label for="Email">Email: </label><br>
-            <input type="email" id="Email" name="Email"><br><br>
-        </div>
-
-        <div>
-            <label for="Senha">Senha: </label><br>
-            <input type="password" id="Senha" name="Senha"><br><br>
-        </div>
-
-        <div>
-            <label for="Telefone">Telefone: </label><br>
-            <input type="tel" id="Telefone" name="Telefone"><br><br>
+            <div class="campo">
+                <label for="Telefone">Telefone: </label><br>
+                <input type="tel" id="Telefone" name="Telefone"><br><br>
+            </div>
         </div>
 
         <p><strong>Endereço:</strong></p><br>
 
-        <div>
-            <label for="CEP">CEP: </label><br>
-            <input type="number" id="CEP" name="CEP"><br>
+        <div class="linha">
+            <div class="campo">
+                <label for="CEP">CEP: </label><br>
+                <input type="number" id="CEP" name="CEP"><br>
+            </div>
+
+            <div class="campo">
+                <label for="Estado">Estado: </label><br>
+                <input type="text" id="Estado" name="Estado"><br>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="Cidade">Cidade: </label><br>
+                <input type="text" id="Cidade" name="Cidade"><br>
+            </div>
+
+            <div class="campo">
+                <label for="Bairro">Bairro: </label><br>
+                <input type="text" id="Bairro" name="Bairro"><br>
+            </div>
         </div>
 
         <div>
-            <label for="Estado">Estado: </label><br>
-            <input type="text" id="Estado" name="Estado"><br>
-        </div>
-
-        <div>
-            <label for="Cidade">Cidade: </label><br>
-            <input type="text" id="Cidade" name="Cidade"><br>
-        </div>
-
-        <div>
-            <label for="Bairro">Bairro: </label><br>
-            <input type="text" id="Bairro" name="Bairro"><br>
-        </div>
-
-        <div>
-            <label for="Complemento">Complemento: </label>
+            <label for="Complemento">Complemento: </label><br>
             <input type="text" id="Complemento" name="Complemento">
         </div><br>
+
+        <div class="campo">
+            <label for="Senha">Senha: </label><br>
+            <input type="password" id="Senha" name="Senha"><br><br>
+        </div>
         
         <div class="button">
         <button type="submit">Concluir</button>

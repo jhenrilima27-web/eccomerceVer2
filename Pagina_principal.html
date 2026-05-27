@@ -9,7 +9,7 @@
 
 <body>
 
-<div class="grid-container">
+<div class="container_principal">
 
     <header class="header">
         <div>
@@ -35,10 +35,20 @@
     </header>
 
     <aside class="sidebar">
-        <h3>Filtros</h3>
-        <p>Categoria</p>
-        <p>Preço</p>
-        <p>Marca</p>
+        <h1>Filtros</h1>
+        
+        <a href="Pagina_cadastro_produtos.html">
+            <button>Cadastrar produtos</button>  
+        </a>
+
+        <a href="Pagina_cadastro_produtos.html">
+            <button>Cadastrar produtos</button>  
+        </a>
+
+        <a href="Pagina_cadastro_produtos.html">
+            <button>Cadastrar produtos</button>  
+        </a>
+
     </aside>
 
     <main class="products" id="listaProdutos">
@@ -55,7 +65,7 @@
 async function abrirCadastro() {
 
     // 1. BUSCA O HTML
-    const resposta = await fetch('Pagina_casdastro.html');
+    const resposta = await fetch('Pagina_casdastro_produtos.html');
     // 2. CONVERTE PARA TEXTO
     const html = await resposta.text();
     // 3. SELECIONA O CONTAINER
