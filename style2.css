@@ -1,0 +1,248 @@
+/*Pagina cadastro, Pagina Carrinho, Pagina Final*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ajuda a manter o tamanho correto dos elementos */
+}
+body {
+    /* Garante que o corpo ocupe a largura total sem margens */
+    margin: 0;
+    padding: 0;
+}
+/*-------------------Pagina Cadastro------------------*/
+.container{
+        display: flex;
+        grid-template-areas: 
+        "header header header"
+        "main main main "
+        "footer footer footer"
+}
+
+.header-cadastro{
+        grid-area: header;
+        background: rgb(130, 199, 245); /*cor de fundo*/
+        justify-content: space-between; /*deixa tudo a esquerda*/
+}
+
+.logo{
+    position: absolute; /*mantém a imagem no local*/
+    left: 0; /*deixa a esquerda*/
+    top: 20px; /*distância do topo*/
+    width: 140px;/*tamanho da imagem da logo*/
+}
+
+.body-cadastro{
+    margin: 0 auto;  /*margem para cima e para baixo*/
+    height: 100vh;  /*Altura da tela 100*/
+    display: flex;  /*Sistema de alinhamento */
+    justify-content: center;  /*centralizar na horizontal*/
+    background-color: rgb(107, 153, 218);  /*Cor de fundo da página*/
+    font-family: Arial, sans-serif; /*fonte*/
+}
+
+input {
+    width: 100%;  /*Ocupa toda a largura da caixa*/
+    padding: 10px;  /*Espaço interno*/
+    border-radius: 20px;  /*Arredondar a borda*/
+    border: none;  /*Remove borda padrão*/
+    margin-top: 5px;  /*Espaço acima do input*/
+}
+
+button{
+    padding: 10px 20px;  /*Altura e largura interna*/
+    border-radius: 20px;  /*Arredondado*/
+    border: none;  /*remove a borda*/
+    background-color:aqua;  /*Cor do botão*/
+    cursor: pointer;  /*Muda o mouse para mão*/
+    justify-content: flex-end; /*Deixa tudo a direita*/
+}
+
+/*-------------------Pagina Final--------------------*/
+.container-final{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 3fr 3fr 2fr;
+    grid-template-areas: 
+    "header-final header-final header-final"
+    "produto-final informação-final body-final"
+    "status status status"
+    "footer-final footer-final footer-final";
+    gap: 10px;
+    height: 100vh;
+}
+
+.header-final{
+    grid-area: header-final;
+    background-color: rgb(46, 129, 245);
+}
+
+.logo-final{
+    position: absolute; /*mantém a imagem no local*/
+    left: 0; /*deixa a esquerda*/
+    top: 10px; /*distância do topo*/
+    width: 90px;/*tamanho da imagem da logo*/
+    margin: 20px;
+}
+
+.titulo-final{
+    justify-self: center; /*mantém o título no centro*/
+    margin: 30px; 
+}
+
+.produto-final{
+    grid-area: produto-final;
+    background-color: rgb(130, 199, 245);
+}
+
+.produto-final img{
+    width:180px; /*largura da imagem*/
+    height:180px; /*altura*/
+    object-fit: cover; /*coloca dentro da area do grid*/
+    margin: 20px;
+}
+
+.informação-final{
+    grid-area: informação-final;
+    background-color:rgb(130, 199, 245);
+    margin: 20px;
+    font-size: 20px;
+}
+
+.body-final{
+    background-color: rgb(130, 199, 245);
+}
+
+.status{
+    grid-area: status;
+    background-color: rgb(130, 199, 245);
+    gap: 10px;
+    margin: 20px;
+}
+
+.etapa{
+    padding: 15px 15px;
+    border-radius: 10px;
+    background-color: rgb(192, 186, 186);
+    justify-self:left;
+    gap: 10px;
+    margin: 5px;
+    
+}
+
+.ativo{
+    background-color: plum;
+}
+
+.concluido{
+    background-color: rgb(78, 223, 103);
+}
+
+.footer-final{
+    grid-area: footer-final;
+    background-color: rgb(46, 129, 245);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/*-------------Pagina Carrinho------------*/
+
+.body-carrinho {
+    background-color: rgb(130, 199, 245);
+}
+
+.container-carrinho {
+    display: grid;
+    grid-template-columns:1fr 2fr 2fr ;
+    grid-template-rows:1fr 2fr 2fr 1fr ;
+    grid-template-areas:
+    "header-carrinho header-carrinho header-carrinho"
+    "produto-carrinho informações total"
+    "pagamento pagamento finalizar"
+    "footer-carrinho footer-carrinho footer-carrinho";
+    gap: 10px;
+    height: 100vh;/*tamanho da página*/
+}
+
+header-carrinho {
+    grid-area: header-carrinho;
+    background-color: rgb(46, 129, 245);
+    align-items: center;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.logo-carrinho{
+    position: absolute; /*mantém a imagem no local*/
+    left: 0; /*deixa a esquerda*/
+    top: 10px; /*distância do topo*/
+    width: 90px;/*tamanho da imagem da logo*/
+    margin: 20px;
+}
+
+.titulo-carrinho{
+    justify-self: center;
+    margin: 30px;
+}
+
+produto-carrinho {
+    grid-area: produto-carrinho;
+}
+
+.imagem-produto {
+    position: absolute; /*mantém a imagem no local*/
+    left: 0; /*deixa a esquerda*/
+    width: 170px;/*tamanho da imagem*/
+    margin: 20px;
+    justify-self: center;
+}
+
+informações {
+    grid-area: informações; 
+}
+
+total {
+    grid-area: total;
+}
+
+pagamento {
+    grid-area: pagamento;
+    background-color: rgb(46, 129, 245);
+}
+
+.formas-pagamento {
+    display:flex;
+    gap:100px;
+    margin:30px;
+}
+
+.botao-tipo-pagamento {
+    padding: 40px 40px;  /*Altura e largura interna*/
+    border-radius: 10px;  /*Arredondado*/
+    border: none;  /*remove a borda*/
+    background-color:aqua;  /*Cor do botão*/
+    cursor: pointer;  /*Muda o mouse para mão*/
+    transition: 0.2s;
+}
+button:focus  {
+  background-color: plum;      /* Cor ao clicar */
+}
+
+finalizar {
+    grid-area: finalizar;
+    justify-self: end;
+    align-self: end;  /*jogar para o final na vertical*/
+}
+.botao-finalizar {
+    padding: 20px 40px;  /*Altura e largura interna*/
+    border-radius: 10px;  /*Arredondado*/
+    border: none;  /*remove a borda*/
+    background-color:blue;  /*Cor do botão*/
+    cursor: pointer;  /*Muda o mouse para mão*/
+    align-items: end;
+}
+
+footer-carrinho {
+    grid-area: footer-carrinho;
+    background-color:rgb(46, 129, 245);
+    text-align: center;
+}
