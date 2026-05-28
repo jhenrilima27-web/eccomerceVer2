@@ -101,7 +101,7 @@ body {
 /*-------------Pagina Carrinho------------*/
 
 .body-carrinho {
-    background-color: rgb(130, 199, 245);
+    background-color: rgb(251, 251, 251);
 }
 
 .container-carrinho {
@@ -117,12 +117,13 @@ body {
     height: 100vh;/*tamanho da página*/
 }
 
-header-carrinho {
+.header-carrinho {
     grid-area: header-carrinho;
-    background-color: rgb(46, 129, 245);
+    background-color: rgb(99, 155, 218);
     align-items: center;
-    padding: 0 20px;
+    padding: 0;
     margin: 0;
+    color: white;
 }
 
 .logo-carrinho{
@@ -140,6 +141,7 @@ header-carrinho {
 
 produto-carrinho {
     grid-area: produto-carrinho;
+    background-color: rgb(251, 251, 251);
 }
 
 .imagem-produto {
@@ -152,15 +154,17 @@ produto-carrinho {
 
 informações {
     grid-area: informações; 
+    background-color: rgb(251, 251, 251);
 }
 
 total {
     grid-area: total;
+    background-color: rgb(251, 251, 251);
 }
 
 pagamento {
     grid-area: pagamento;
-    background-color: rgb(46, 129, 245);
+    background-color: rgb(251, 251, 251);
 }
 
 .formas-pagamento {
@@ -173,7 +177,7 @@ pagamento {
     padding: 40px 40px;  /*Altura e largura interna*/
     border-radius: 10px;  /*Arredondado*/
     border: none;  /*remove a borda*/
-    background-color:aqua;  /*Cor do botão*/
+    background-color:rgb(60, 179, 239);  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
     transition: 0.2s;
 }
@@ -181,21 +185,22 @@ button:focus  {
   background-color: plum;      /* Cor ao clicar */
 }
 
-finalizar {
+.finalizar {
     grid-area: finalizar;
     justify-self: end;
     align-self: end;  /*jogar para o final na vertical*/
+    background-color: rgb(251, 251, 251);
 }
 .botao-finalizar {
     padding: 20px 40px;  /*Altura e largura interna*/
     border-radius: 10px;  /*Arredondado*/
     border: none;  /*remove a borda*/
-    background-color:blue;  /*Cor do botão*/
+    background-color:rgb(50, 94, 139);  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
     align-items: end;
 }
 
-footer-carrinho {
+.footer-carrinho {
     grid-area: footer-carrinho;
     background-color:rgb(46, 129, 245);
     text-align: center;
