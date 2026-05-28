@@ -56,7 +56,7 @@ button:hover{
 /* HEADER */
 .header {
     grid-area: header;
-    background: rgb(107, 153, 218);
+    background: rgb(135, 181, 247);
     color: white;
     padding: 15px;
     border-radius: 8px;
@@ -72,7 +72,7 @@ button:hover{
 /* SIDEBAR */
 .sidebar {
     grid-area: sidebar;
-    background: rgb(8, 63, 180);
+    background: rgb(135, 181, 247);
     padding: 20px;
     border-radius: 8px;
 }
@@ -116,7 +116,7 @@ button:hover{
 /* FOOTER */
 .footer {
     grid-area: footer;
-    background: rgb(107, 153, 218);
+    background: rgb(135, 181, 247);
     color: white;
     text-align: center;
     padding: 15px;
@@ -138,10 +138,10 @@ button:hover{
 
 .logo_branca{
     position: absolute; /*mantém a imagem no local*/
-    left: 0; /*deixa a esquerda*/
-    top: 10px; /*distância do topo*/
+    justify-content: center;
+    top: 0px; /*distância do topo*/
     width: 200px;/*tamanho da imagem da logo*/
-    margin: 20px;
+    margin: 0px;
 }
 
 /*-------------Pagina_cadastro_produtos--------------*/
@@ -166,6 +166,7 @@ button:hover{
 h1{
     text-align:center;
     margin-bottom:25px;
+    margin-top: 25px;
 }
 
 .grupo{
@@ -197,11 +198,12 @@ input:focus{
 
 
 .body-cadastro{
-    margin: 0 auto;  /*margem para cima e para baixo*/
-    height: 100vh;  /*Altura da tela 100*/
+    display:flex;
+    height: 139vh;  /*Altura da tela 100*/
     justify-content: center;  /*centralizar na horizontal*/
     font-family: Arial, sans-serif; /*fonte*/
-    margin: 15px;
+    margin: 10px;
+    margin-top: 95px;
 }
 
 .linha {
