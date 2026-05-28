@@ -10,6 +10,32 @@ body {
     margin: 0;
     padding: 0px;
 }
+
+button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button1{
+    background:rgb(65, 110, 155);
+    border-radius:7px;
+    font-size:18px;
+    padding: 10px 20px;  /*Altura e largura interna*/
+    justify-content: flex-end; /*Deixa tudo a direita*/
+    display: block;
+    margin-left: auto;
+}
+
+.button2 {
+    background:rgb(65, 110, 155);
+    border-radius:7px;
+    font-size:18px;
+    padding: 10px 20px;  /*Altura e largura interna*/
+    justify-content: flex-end; /*Deixa tudo a direita*/
+}
+button:hover{
+    background:#0056b3;
+}
 /*---------------Pagina_principal---------------*/
 
 /* GRID PRINCIPAL */
@@ -158,22 +184,6 @@ input:focus{
     border-color:#007bff;
 }
 
-button{
-    background:rgb(65, 110, 155);
-    border:none;
-    border-radius:4px;
-    font-size:18px;
-    padding: 10px 20px;  /*Altura e largura interna*/
-    cursor: pointer;  /*Muda o mouse para mão*/
-    justify-content: flex-end; /*Deixa tudo a direita*/
-    transition: 0.3s;
-    display: block;
-    margin-left: auto;
-}
-
-button:hover{
-    background:#0056b3;
-}
 
 /*-------------------Pagina Cadastro------------------*/
 
@@ -201,4 +211,13 @@ button:hover{
 .formulario{
     max-width: 900px;
     margin: auto;
+}
+.container_cadastro{
+    width: 800px;
+    max-width:200000px;
+    margin:auto;
+    background:rgb(135, 181, 247);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
