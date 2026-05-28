@@ -89,20 +89,24 @@ button:hover{
 
 /* CARD */
 .product-card {
-    background: white;
+    background: rgb(199, 191, 191);
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-
+    border: 2px solid #b3c0cec7;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+.product-card:hover{
+    transform: scale(1.05);
+}
+
 /* IMAGEM AJUSTADA */
 .product-card img {
     width: 100%;
-    height: 180px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
 }
