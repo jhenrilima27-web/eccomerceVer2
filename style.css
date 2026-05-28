@@ -29,8 +29,8 @@ button {
 .button2 {
     background:rgb(65, 110, 155);
     border-radius:7px;
-    font-size:18px;
-    padding: 10px 20px;  /*Altura e largura interna*/
+    font-size:17px;
+    padding: 9px 15px;  /*Altura e largura interna*/
     justify-content: flex-end; /*Deixa tudo a direita*/
 }
 button:hover{
@@ -65,7 +65,7 @@ button:hover{
     align-items: center;
 }
 
-.logo{
+.logo_principal{
     width: 80px;/*tamanho da imagem da logo*/
 }
 
@@ -134,6 +134,14 @@ button:hover{
 
         grid-template-columns: 1fr;
     }
+}
+
+.logo_branca{
+    position: absolute; /*mantém a imagem no local*/
+    left: 0; /*deixa a esquerda*/
+    top: 10px; /*distância do topo*/
+    width: 200px;/*tamanho da imagem da logo*/
+    margin: 20px;
 }
 
 /*-------------Pagina_cadastro_produtos--------------*/
@@ -220,4 +228,20 @@ input:focus{
     padding:30px;
     border-radius:10px;
     box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 800px) {
+    .body_cadastro {
+        margin:5px;
+    }
+    .container_cadastro {
+    min-width: 300px;
+    width: 500px;
+    max-width:500px;
+    margin:auto;
+    background:rgb(135, 181, 247);
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
 }
