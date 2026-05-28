@@ -1,4 +1,4 @@
-/*Pagina cadastro, Pagina Carrinho, Pagina Final*/
+/*Pagina Final, Pagina Carrinho, Pagina Login*/
 * {
     margin: 0;
     padding: 0;
@@ -214,7 +214,7 @@ button:focus  {
     display: flex;  /*Sistema de alinhamento */
     justify-content: center;  /*centralizar na horizontal*/
     align-items: center;  /*centralizar na vertical*/
-    background-color:rgb(251, 251, 251) ;  /*Cor de funfo da página*/
+    background-color:rgb(251, 251, 251) ;  /*Cor de fundo da página*/
     font-family: Arial, sans-serif;  /*Escolha da fonte */
     }
 
@@ -227,26 +227,31 @@ button:focus  {
     max-width: 600px; /*Limite de tamanho*/
     }
 
+h1{
+    text-align: center;
+}
+
 input {
     width: 100%;  /*Ocupa toda a largura da caixa*/
-    padding: 10px;  /*Espaço interno*/
+    padding: 12px;  /*Espaço interno*/
     border-radius: 20px;  /*Arredondar a borda*/
-    border: none;  /*Remove borda padrão*/
+    border:2px solid #ccc;  /*Remove borda padrão*/
     margin-top: 5px;  /*Espaço acima do input*/
+    font-size: 16px;
 }
 
 button {
-    padding: 10px 20px;  /*Altura e largura interna*/
-    border-radius: 20px;  /*Arredondado*/
-    border: none;  /*remove a borda*/
-    background-color:rgb(50, 94, 139);  /*Cor do botão*/
+    padding: 12px;  /*Altura e largura interna*/
+    border-radius: 5px;  /*Arredondado*/
+    border: 0 0 10xp black;  /*remove a borda*/
+    background-color:rgb(64, 106, 149);  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
     transition: 0.3s;
+    font-size:15px;
 }
 
 button:hover {
-    background-color: black;
-    color: white;
+    background-color: #0056b3;
 }
 
 .botoes {
