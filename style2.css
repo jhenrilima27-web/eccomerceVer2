@@ -25,7 +25,7 @@ body {
 
 .header-final{
     grid-area: header-final;
-    background-color: rgb(99, 155, 218);
+    background-color: rgb(107, 153, 218);
 
 }
 
@@ -45,7 +45,7 @@ body {
 
 .produto-final{
     grid-area: produto-final;
-    background-color: rgb(251, 251, 251);
+    background-color: #f5f5f5;
 }
 
 .produto-final img{
@@ -57,18 +57,18 @@ body {
 
 .informação-final{
     grid-area: informação-final;
-    background-color:rgb(251, 251, 251);
+    background-color:#f5f5f5;
     margin: 20px;
     font-size: 20px;
 }
 
 .body-final{
-    background-color:rgb(251, 251, 251);
+    background-color:#f5f5f5;
 }
 
 .status{
     grid-area: status;
-    background-color: rgb(251, 251, 251);
+    background-color: #f5f5f5;
     gap: 10px;
     margin: 20px;
 }
@@ -93,7 +93,7 @@ body {
 
 .footer-final{
     grid-area: footer-final;
-    background-color: rgb(99, 155, 218);
+    background-color: rgb(107, 153, 218);
     border-radius: 10px;
     text-align: center;
 }
