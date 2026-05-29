@@ -194,7 +194,7 @@ button:focus  {
 .botao-finalizar {
     padding: 20px 40px;  /*Altura e largura interna*/
     border-radius: 10px;  /*Arredondado*/
-    border: none;  /*remove a borda*/
+    border: 0 0 10xp black;  /*adiciona cor e tamanho da borda*/
     background-color:rgb(50, 94, 139);  /*Cor do botão*/
     cursor: pointer;  /*Muda o mouse para mão*/
     align-items: end;
@@ -202,7 +202,7 @@ button:focus  {
 
 .footer-carrinho {
     grid-area: footer-carrinho;
-    background-color:rgb(46, 129, 245);
+    background-color:rgb(99, 155, 218);
     text-align: center;
 }
 
