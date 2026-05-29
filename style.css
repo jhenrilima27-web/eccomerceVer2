@@ -9,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0px;
+    background: rgb(235, 235, 235)
 }
 
 button {
@@ -41,7 +42,6 @@ button:hover{
 /* GRID PRINCIPAL */
 .container_principal {
     display: grid;
-    max-width: 1200px;
     margin: 0px auto;
     gap: 20px;
 
@@ -50,7 +50,7 @@ button:hover{
         "sidebar products"
         "footer footer";
 
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 270px 1fr;
 }
 
 /* HEADER */
@@ -75,25 +75,25 @@ button:hover{
     background: rgb(135, 181, 247);
     padding: 20px;
     border-radius: 8px;
+    margin-left: 20px;
 }
 
 /* PRODUTOS */
 .products {
     grid-area: products;
-
     display: grid;
     gap: 20px;
-
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-right: 20px;
 }
 
 /* CARD */
 .product-card {
-    background: rgb(199, 191, 191);
+    background: white;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    border: 2px solid #b3c0cec7;
+    border: 2px solid #b3c0ce46;
     display: flex;
     flex-direction: column;
     gap: 10px;
