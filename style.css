@@ -140,13 +140,24 @@ button:hover{
     }
 }
 
-.logo_branca{
+.logo_branca1{
     position: absolute; /*mantém a imagem no local*/
     justify-content: center;
     top: 0px; /*distância do topo*/
     width: 200px;/*tamanho da imagem da logo*/
     margin: 0px;
 }
+
+.logo_branca2{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 200px;/*tamanho da imagem da logo*/
+    margin: 0px;
+    align-items:center;
+    margin-bottom: 440px;
+}
+
 
 /*-------------Pagina_cadastro_produtos--------------*/
 
@@ -158,8 +169,8 @@ button:hover{
 }
 
 .container_cadastro_produtos{
-    width: 600px;
-    max-width:600px;
+    width: 700px;
+    max-width:700px;
     margin:auto;
     background:rgb(135, 181, 247);
     padding:30px;
@@ -203,11 +214,11 @@ input:focus{
 
 .body-cadastro{
     display:flex;
-    height: 139vh;  /*Altura da tela 100*/
     justify-content: center;  /*centralizar na horizontal*/
     font-family: Arial, sans-serif; /*fonte*/
     margin: 10px;
     margin-top: 95px;
+    align-items:center;
 }
 
 .linha {
