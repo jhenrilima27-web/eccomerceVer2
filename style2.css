@@ -26,7 +26,7 @@ body {
 .header-final{
     grid-area: header-final;
     background-color: rgb(107, 153, 218);
-
+    height: 110px;
 }
 
 .logo-final{
@@ -107,7 +107,7 @@ body {
 .container-carrinho {
     display: grid;
     grid-template-columns:1fr 2fr 2fr ;
-    grid-template-rows:1fr 2fr 2fr 1fr ;
+    grid-template-rows:110px 2fr 2fr 1fr ;
     grid-template-areas:
     "header-carrinho header-carrinho header-carrinho"
     "card-carrinho card-carrinho card-total"
@@ -265,4 +265,32 @@ button:hover {
     margin: 0px;
     align-items:center;
     margin-bottom: 410px;
+}
+
+.casa_inicial {
+    position: absolute;
+    width: 100px;/*tamanho da imagem da logo*/
+    margin: 10px;
+    padding:30px;
+    border-radius:10px;
+    top: 10px;
+    right: 0px;
+}
+
+.voltar {
+    position: absolute;
+    width: 110px;/*tamanho da imagem da logo*/
+    margin: 10px;
+    padding:30px;
+    border-radius:10px;
+    top: 0px;
+    left: 0px;
+}
+
+.casa_inicial:hover{
+    transform: scale(1.2);
+}
+
+.voltar:hover{
+    transform: scale(1.2);
 }

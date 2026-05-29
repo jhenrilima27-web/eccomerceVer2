@@ -17,14 +17,18 @@ button {
     transition: 0.3s;
 }
 
+a{
+    text-decoration: none;
+}
+
 .button1{
     background:rgb(65, 110, 155);
     border-radius:7px;
-    font-size:18px;
+    font-size:17px;
     padding: 10px 20px;  /*Altura e largura interna*/
-    justify-content: flex-end; /*Deixa tudo a direita*/
     display: block;
     margin-left: auto;
+    width: 200px;
 }
 
 .button2 {
@@ -33,6 +37,7 @@ button {
     font-size:17px;
     padding: 9px 15px;  /*Altura e largura interna*/
     justify-content: flex-end; /*Deixa tudo a direita*/
+    margin-right: 15px;
 }
 
 .casa_inicial {
@@ -56,11 +61,11 @@ button {
 }
 
 .casa_inicial:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .voltar:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 button:hover{
@@ -95,7 +100,7 @@ button:hover{
 }
 
 .logo_principal{
-    width: 80px;/*tamanho da imagem da logo*/
+    width: 110px;/*tamanho da imagem da logo*/
 }
 
 /* SIDEBAR */
@@ -105,6 +110,7 @@ button:hover{
     padding: 20px;
     border-radius: 8px;
     margin-left: 20px;
+    max-height: 350px;
 }
 
 /* PRODUTOS */
