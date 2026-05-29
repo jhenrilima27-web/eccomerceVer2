@@ -19,31 +19,31 @@
             </div>
         </header-carrinho>
 
-        <produto-carrinho>
+        <card-carrinho class="card-carrinho">
             <img src="img/imagembrinquedo1.webp" class="imagem-produto">
-        </produto-carrinho>
+            <div class="informações">
+                <h3>Produto: Carrinho de policia</h3>
+                <h3>Preço Unitário: R$35,00</h3>
+                <h3>Unidades: 2</h3>
+            </div>
+        </card-carrinho>
+      
+        <card-total class="card-total">
+            <h2><strong>Produto 1:</strong> R$70,00</h2>
+            <h2><strong>Total:</strong>R$70,00 reais</h2><br><br>
+            <h2>Formas de pagamento</h2><br>
+            <div>
+                <p>Selecione a forma de pagamento:</p><br>
+                <select name="pagamento">
+                    <option value="Pix">Pix</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Boleto">Boleto</option>
+                </select>
+            </div>         
+        </card-total>
 
-        <informações>
-            <h3>Produto: Carrinho de policia</h3>
-            <h3>Preço Unitário: R$35,00 reais</h3>
-            <h3>Unidades: 2</h3>
-            <h3>Total produto: R$70,00 reais</h3>
-        </informações>
-
-        <total>
-            <h2>Produto 1: R$70,00</h2>
-            <h2>Total: R$70,00 reais</h2>
-        </total>
-
-        <pagamento>
-            <h2>Formas de pagamento:</h2>
-        <div class="formas-pagamento">
-            <button type="button" class="botao-tipo-pagamento">Pix</button>
-            <button type="button" class="botao-tipo-pagamento">Cartão</button>
-            <button type="button" class="botao-tipo-pagamento">Boleto</button>
-        </div>
-        </pagamento>
-
+        
         <finalizar class="finalizar">
             <a href="pagFinal.html">
             <button type="button" class="botao-finalizar">Finalizar compra</button>
@@ -60,3 +60,4 @@
 </body>
 </body>
 </html>
+
