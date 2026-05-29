@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     fclose($file);
 
-    header("Location: pagLogin.html");
+    header("Location: Pagina_Login.html");
     exit;
 
 } else {
