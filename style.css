@@ -9,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0px;
+    background: rgb(235, 235, 235)
 }
 
 button {
@@ -41,7 +42,6 @@ button:hover{
 /* GRID PRINCIPAL */
 .container_principal {
     display: grid;
-    max-width: 1200px;
     margin: 0px auto;
     gap: 20px;
 
@@ -50,7 +50,7 @@ button:hover{
         "sidebar products"
         "footer footer";
 
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 270px 1fr;
 }
 
 /* HEADER */
@@ -75,16 +75,16 @@ button:hover{
     background: rgb(135, 181, 247);
     padding: 20px;
     border-radius: 8px;
+    margin-left: 20px;
 }
 
 /* PRODUTOS */
 .products {
     grid-area: products;
-
     display: grid;
     gap: 20px;
-
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-right: 20px;
 }
 
 /* CARD */
@@ -93,16 +93,20 @@ button:hover{
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-
+    border: 2px solid #b3c0ce46;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
+.product-card:hover{
+    transform: scale(1.05);
+}
+
 /* IMAGEM AJUSTADA */
 .product-card img {
     width: 100%;
-    height: 180px;
+    height: 250px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -136,13 +140,24 @@ button:hover{
     }
 }
 
-.logo_branca{
+.logo_branca1{
     position: absolute; /*mantém a imagem no local*/
     justify-content: center;
     top: 0px; /*distância do topo*/
     width: 200px;/*tamanho da imagem da logo*/
     margin: 0px;
 }
+
+.logo_branca2{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 200px;/*tamanho da imagem da logo*/
+    margin: 0px;
+    align-items:center;
+    margin-bottom: 440px;
+}
+
 
 /*-------------Pagina_cadastro_produtos--------------*/
 
@@ -154,8 +169,8 @@ button:hover{
 }
 
 .container_cadastro_produtos{
-    width: 600px;
-    max-width:600px;
+    width: 700px;
+    max-width:700px;
     margin:auto;
     background:rgb(135, 181, 247);
     padding:30px;
@@ -199,11 +214,11 @@ input:focus{
 
 .body-cadastro{
     display:flex;
-    height: 139vh;  /*Altura da tela 100*/
     justify-content: center;  /*centralizar na horizontal*/
     font-family: Arial, sans-serif; /*fonte*/
     margin: 10px;
     margin-top: 95px;
+    align-items:center;
 }
 
 .linha {

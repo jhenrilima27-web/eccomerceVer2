@@ -220,11 +220,11 @@ button:focus  {
 
 .login-container {
     background-color: rgb(135, 181, 247);  /*Cor de fundo*/
-    padding: 30px;  /*espaço interno*/
+    padding: 45px;  /*espaço interno*/
     border-radius: 15px;  /*Bordas arredondadas*/
     margin: 3%; /*Margem */
     width: 100%;  /*Ocupa o máximo de Largura possivel*/
-    max-width: 600px; /*Limite de tamanho*/
+    max-width: 650px; /*Limite de tamanho*/
     }
 
 h1{
@@ -267,4 +267,14 @@ button:hover {
 
 .logo{
     width: 80px;/*tamanho da imagem da logo*/
+}
+
+.logo_branca{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    width: 200px;/*tamanho da imagem da logo*/
+    margin: 0px;
+    align-items:center;
+    margin-bottom: 410px;
 }
