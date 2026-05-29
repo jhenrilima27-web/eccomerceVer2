@@ -34,6 +34,35 @@ button {
     padding: 9px 15px;  /*Altura e largura interna*/
     justify-content: flex-end; /*Deixa tudo a direita*/
 }
+
+.casa_inicial {
+    position: absolute;
+    width: 100px;/*tamanho da imagem da logo*/
+    margin: 10px;
+    padding:30px;
+    border-radius:10px;
+    top: 10px;
+    right: 0px;
+}
+
+.voltar {
+    position: absolute;
+    width: 110px;/*tamanho da imagem da logo*/
+    margin: 10px;
+    padding:30px;
+    border-radius:10px;
+    top: 0px;
+    left: 0px;
+}
+
+.casa_inicial:hover{
+    transform: scale(1.05);
+}
+
+.voltar:hover{
+    transform: scale(1.05);
+}
+
 button:hover{
     background:#0056b3;
 }
