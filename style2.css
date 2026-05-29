@@ -96,6 +96,7 @@ body {
     background-color: rgb(107, 153, 218);
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
 
 /*-------------Pagina Carrinho------------*/
@@ -192,6 +193,7 @@ body {
     grid-area: footer-carrinho;
     background-color:rgb(107, 153, 218);
     text-align: center;
+    color: white;
 }
 
 /*----------Pagina Login----------*/
